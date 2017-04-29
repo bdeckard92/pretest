@@ -4,18 +4,34 @@ body {
 }
 
 body {
-  background-image: url(../images/tacky.jpg);
+  
   text-align: center;
 }
 
-#wrapper {
+.eggs {
+  background-image: url(../images/eggs.png);
+}
+.flat {
+  background-image: url(../images/flat.png);
+
+}
+
+.face {
+  background-image: url(../images/face.png);
+}
+# {
 
   margin: 2.5% auto;
   background-color: #FF17A;
   width: 968px;
-  height: 95%;
+  height: 50%;
   box-sizing: border-box;
 
+}
+
+.cell {
+  background-image: url(../images/atp.png);
+  background-color: yellow;
 }
 
 #sub-wrapper {
@@ -63,15 +79,20 @@ h3 {
 }
 
 #start {
-  margin-top: 100%;
+  text-align: center;
+  
   border:2px solid blue;
   background; pink;
 
 }
 
+#done {
+  text-align: center;
+}
+
 button:hover {
   border:2px solid blue;
-  background: pink;
+  background: green;
 }
 
 
