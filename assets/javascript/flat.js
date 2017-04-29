@@ -154,7 +154,7 @@ if (this.correct<3){
 
     panel.html("<h2>You missed more than three questions about Cellular Energy</h2>");
     panel.html("<h2>Watch this video and come back and try again.</h2>");
-    panel.append("<a href='https://www.youtube.com/watch?v=xfy8aqushqU' target= 'about blank'>Video Tutorial:</a>");
+    panel.append("<a href='https://www.youtube.com/watch?v=Bq5To-ZH160&t=5s' target= 'about blank'>Video Tutorial:</a>");
     panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
     panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
