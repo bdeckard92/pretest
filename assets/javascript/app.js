@@ -59,7 +59,7 @@ var preTest = {
 
             }
         }
-        panel.append("<button id = 'done'>Done</button>");
+        panel.append("<button id = 'done' class='col-sm-offset-3'>Done</button>");
     },
 
     done: function() {

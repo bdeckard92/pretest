@@ -5,7 +5,7 @@ body {
 
 body {
   
-  text-align: center;
+  text-align: left;
 }
 
 .eggs {
@@ -27,6 +27,10 @@ body {
   height: 50%;
   box-sizing: border-box;
 
+}
+
+.homeindex {
+  background-image: url(../images/oldguy.png);
 }
 
 .cell {
