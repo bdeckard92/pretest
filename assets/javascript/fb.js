@@ -55,14 +55,14 @@ var game = {
     $(".hope").remove();
 
     for (var i = 0; i < questions.length; i++) {
-      panel.append("<h2>" + questions[i].question + "</h2>");
+      panel.append("<h3>" + questions[i].question + "</h3>");
       for (var j = 0; j < questions[i].answers.length; j++) {
         panel.append("<input type='radio' name='question-" + i +
         "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
       }
     }
 
-    panel.append("<button id='done' class='col-mid-offset-3'>Done</button>");
+    panel.append("<button id='done' style='text-align: center;'>Done</button>");
   },
 
   done: function() {
@@ -152,12 +152,17 @@ var game = {
     $("#sub-wrapper h2").remove();
 if (this.correct<3){
 
+  $('#vid').removeClass('hidden');
+
     panel.html("<h2>You missed more than three questions about Cellular Energy</h2>");
     panel.html("<h2>Watch this video and come back and try again.</h2>");
-    panel.append("<a href='https://www.youtube.com/watch?v=T-EobBe-hdI' target= 'about blank'>Video Tutorial:</a>");
+
+
+    //panel.append("<a href='https://www.youtube.com/watch?v=T-EobBe-hdI' target= 'about blank'>Video Tutorial:</a>");
     panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
     panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+    
   } else
   panel.html("<h2>Great Job!");
   }

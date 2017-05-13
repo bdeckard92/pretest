@@ -29,6 +29,10 @@ body {
 
 }
 
+#hidden {
+  display: none;
+}
+
 .homeindex {
   background-image: url(../images/oldguy.png);
 }
@@ -52,6 +56,7 @@ button {
   cursor: pointer;
   background: transparent;
   font-size; 42px;
+  text-align: center;
 
 }
 
@@ -90,13 +95,15 @@ h3 {
 
 }
 
-#done {
+
+
+button {
   text-align: center;
 }
-
 button:hover {
   border:2px solid blue;
-  background: green;
+  background: grey;
+  
 }
 
 
